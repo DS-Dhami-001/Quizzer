@@ -1,0 +1,142 @@
+#login.html  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login & Register | Quizzer</title>
+</head>
+<body>
+    <h2>Quizzer Login</h2>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username or Email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <input type="submit" value="Login">
+        <button type="Button" onclick="location.href='register.html'">Register</button>
+    </form>
+</body>
+</html>
+
+
+#Register.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+     <link rel="stylesheet" href="style.css">
+    <title>Register | Quizzer</title>
+</head>
+
+<body>
+    <h2>Quizzer Register</h2>
+    <form>         
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" placeholder="Confirm your password"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
+
+# Style.sheet 
+
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 50px 10px;
+            color: #222;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px 30px;
+            border: 2px solid #0077cc;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 119, 204, 0.2);
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #d93025;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin: 10px 0 15px;
+            border: 1.5px solid #0077cc;
+            border-radius: 5px;
+            font-size: 15px;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        input::placeholder {
+            color: #a83232;
+            font-weight: 500;
+        }
+
+        input[type="submit"],
+        button {
+            width: 48%;
+            padding: 10px 0;
+            margin: 5px 1%;
+            background-color: #d93025;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #a52714;
+        }
+
+        .error {
+            color: #d93025;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        @media (max-width: 420px) {
+            form {
+                padding: 20px 15px;
+                max-width: 95%;
+            }
+            input[type="submit"],
+            button {
+                width: 100%;
+                margin: 8px 0;
+            }
+        }
+    </style>
